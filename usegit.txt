@@ -1,0 +1,235 @@
+Microsoft Windows [Version 10.0.17134.523]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\user>git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout    Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+C:\Users\user>git config --global user.name "wanvipa"
+
+C:\Users\user>git config --global user.email "wanvipa1906@gmail.com
+
+C:\Users\user>git config --global --list
+user.name=wanvipa
+user.email=wanvipa1906@gmail.com
+
+C:\Users\user>ls -al ~/.ssh
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\user>cd Documents
+
+C:\Users\user\Documents>cd otbox
+
+C:\Users\user\Documents\otbox>git init
+Initialized empty Git repository in C:/Users/user/Documents/otbox/.git/
+
+C:\Users\user\Documents\otbox>touch test.txt
+'touch' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\user\Documents\otbox>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\user\Documents\otbox>git add test.txt
+
+C:\Users\user\Documents\otbox>git commit -m"test"
+[master (root-commit) dbfed5e] test
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+C:\Users\user\Documents\otbox>git remote add origin https://github.com/Freezzes/otbox.git
+
+C:\Users\user\Documents\otbox>git push -u origin master
+
+C:\Users\user\Documents\otbox>
+C:\Users\user\Documents\otbox>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\user\Documents\otbox>git clone https://github.com/Freezzes/otbox.git
+Cloning into 'otbox'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+C:\Users\user\Documents\otbox>git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        otbox/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\user\Documents\otbox>cd otbox
+
+C:\Users\user\Documents\otbox\otbox>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\user\Documents\otbox\otbox>git add test.txt
+
+C:\Users\user\Documents\otbox\otbox>git commit -m"test"
+[master 50895ea] test
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+C:\Users\user\Documents\otbox\otbox>git remote add origin https://github.com/Freezzes/otbox.git
+fatal: remote origin already exists.
+
+C:\Users\user\Documents\otbox\otbox>git remote -v
+origin  https://github.com/Freezzes/otbox.git (fetch)
+origin  https://github.com/Freezzes/otbox.git (push)
+
+C:\Users\user\Documents\otbox\otbox>git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 270 bytes | 90.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Freezzes/otbox.git
+   e2020db..50895ea  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\user\Documents\otbox\otbox>
+
+C:\Users\user\Documents\otbox\otbox>
+
+C:\Users\user\Documents\otbox\otbox>
+
+C:\Users\user\Documents\otbox\otbox>
+
+C:\Users\user\Documents\otbox\otbox>
+
+C:\Users\user\Documents\otbox\otbox>
+
+C:\Users\user\Documents\otbox\otbox>
+
+C:\Users\user\Documents\otbox\otbox>
+
+C:\Users\user\Documents\otbox\otbox>
+
+C:\Users\user\Documents\otbox\otbox>
+
+C:\Users\user\Documents\otbox\otbox>
+
+C:\Users\user\Documents\otbox\otbox>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\user\Documents\otbox\otbox>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\user\Documents\otbox\otbox>git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+C:\Users\user\Documents\otbox\otbox>git fetch
+
+C:\Users\user\Documents\otbox\otbox>git add test.txt
+
+C:\Users\user\Documents\otbox\otbox>git commit -m"how to use git"
+[master c37282e] how to use git
+ 1 file changed, 153 insertions(+), 1 deletion(-)
+ rewrite test.txt (100%)
+
+C:\Users\user\Documents\otbox\otbox>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.02 KiB | 1.01 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Freezzes/otbox.git
+   50895ea..c37282e  master -> master
+
+C:\Users\user\Documents\otbox\otbox>git log
+commit c37282e7ca3b0565d984e3a3d8957b95f0efad7b (HEAD -> master, origin/master, origin/HEAD)
+Author: wanvipa <wanvipa1906@gmail.com>
+Date:   Wed Jan 23 05:41:18 2019 +0700
+
+    how to use git
+
+commit 50895ea9f693acb247264ef2c225d7ad830605ee
+Author: wanvipa <wanvipa1906@gmail.com>
+Date:   Wed Jan 23 05:35:43 2019 +0700
+
+    test
+
+commit e2020dbbd9be2cbcb916d3e775af3850a1977b91
+Author: Icewanvipa <42804074+Freezzes@users.noreply.github.com>
+Date:   Wed Jan 23 05:24:44 2019 +0700
+
+    Initial commit
+
+C:\Users\user\Documents\otbox\otbox>
